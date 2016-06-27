@@ -1,0 +1,9 @@
+*.pyc
+__pycache__
+venvblog
+db.sqlite3
+/static
+.DS_Store
+/.ropeproject
+/tests
+setup.py
