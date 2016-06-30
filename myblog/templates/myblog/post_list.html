@@ -7,18 +7,13 @@
             <h1><a href="">Weedandbleed's blog</a></h1>
         </div>
 
+        {% for post in posts %}
+            <div>
+                <p>Published:{{ post.published_date }}</p>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text | linebreaksbr }}</p>
+            </div>
+        {% endfor %}
 
-        <div>
-            <p>Published:30 june 2016, 16:57</p>
-            <h2><a href="">My first post</a></h2>
-            <p>My first post is on philosphy of Buddhism</p>
-        </div>
-
-
-        <div>
-            <p>Published:1 july 2016, 12:30</p>
-            <h2><a href="">My second post</a></h2>
-            <p>My second post is on 'Is Buddhism a religion?'</p>
-        </div>
-     </body>
+    </body>
 </html>
